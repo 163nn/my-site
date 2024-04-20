@@ -1,0 +1,173 @@
+@charset "utf-8";
+
+body {
+  margin: 0;
+}
+
+/* header */
+h1 {
+  margin: 0;
+  font-weight: normal;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+p {
+  margin: 0;
+  font-size: 15px;
+}
+
+header {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 120px 0;
+  width: calc(100% - 320px);
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  gap: 32px;
+  cursor: pointer;
+}
+
+.container:hover {
+  opacity: .7;
+}
+
+/* main */
+.main img {
+  width: 100%;
+  height: 420px;
+}
+
+/* section */
+.about {
+  margin: 0 auto;
+  padding: 64px 0;
+  width: calc(100% - 420px);
+  box-sizing: border-box;
+}
+
+h2 {
+  margin: 0;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.about p {
+  margin: 0;
+  font-size: 14px;
+  margin-bottom: 45px;
+}
+
+.works {
+  padding: 0 210px;
+  margin-bottom: 160px;
+}
+
+.images {
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 32px;
+}
+
+.works img {
+  width: 256px;
+  height: 166.8px;
+}
+
+table {
+  margin: 0 auto;
+  border-collapse: collapse;
+  border: gainsboro;
+  font-size: 14px;
+}
+
+tr,td {
+  border-right: none;
+  border-left: none;
+  padding: 16px 56px 16px 10px;
+}
+
+.contact {
+  margin-top: 160px;
+}
+
+label {
+  font-size: 14px;
+}
+
+.contact-form {
+  width: 60%;
+  margin: auto;
+}
+
+.contacts {
+  display: flex;
+}
+
+label, input, textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 12px;
+}
+
+input {
+  width: 450%;
+  height: 32px;
+}
+
+textarea {
+  width: 450%;
+  height: 160px;
+}
+
+button {
+  all: unset;
+  display: block;
+  margin: 24px auto;
+  text-align: center;
+  width: 190px;
+  height: 56px;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: white;
+  color: black;
+  outline: .5px solid;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  font-size: 10px;
+  margin-top: 160px;
+  padding: 8px 0;
+}
+
+@media (max-width: 600px) {
+  header {
+    display: block;
+    text-align: center;
+  }
+
+  .about {
+    width: auto;
+  }
+
+  td {
+    display: block;
+  }
+  
+  .contacts {
+    display: block;
+  }
+}
