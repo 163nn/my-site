@@ -1,5 +1,10 @@
 @charset "utf-8";
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   margin: 0;
 }
@@ -12,34 +17,55 @@ h1 {
   cursor: pointer;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
 p {
   margin: 0;
   font-size: 15px;
+}
+
+.a1:hover {
+  opacity: .7;
+}
+
+.a2:hover {
+  opacity: .7;
+}
+
+.a3:hover {
+  opacity: .7;
+}
+
+.a4:hover {
+  opacity: .7;
+}
+
+.insta:hover {
+  opacity: .7;
 }
 
 header {
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  padding: 120px 0;
-  width: calc(100% - 320px);
+  padding: 110px 16px;
+  max-width: 880px;
   box-sizing: border-box;
 }
 
 .container {
   display: flex;
   gap: 32px;
-  cursor: pointer;
-}
-
-.container:hover {
-  opacity: .7;
 }
 
 /* main */
 .main img {
   width: 100%;
   height: 420px;
+  object-fit: cover;
 }
 
 /* section */
@@ -63,7 +89,6 @@ h2 {
 }
 
 .works {
-  padding: 0 210px;
   margin-bottom: 160px;
 }
 
@@ -72,22 +97,27 @@ h2 {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  gap: 32px;
+  gap: 24px;
+  box-sizing: border-box;
+  width: 65%;
 }
 
 .works img {
-  width: 256px;
+  width: calc((100% - 16px - 16px -16px)/ 3);
   height: 166.8px;
+  box-sizing: border-box;
 }
 
 table {
   margin: 0 auto;
   border-collapse: collapse;
-  border: gainsboro;
+  /* border: gainsboro; */
   font-size: 14px;
 }
 
 tr,td {
+  border-top: 1px solid gainsboro;
+  border-bottom: 1px solid gainsboro;
   border-right: none;
   border-left: none;
   padding: 16px 56px 16px 10px;
@@ -99,6 +129,7 @@ tr,td {
 
 label {
   font-size: 14px;
+  width: 20%;
 }
 
 .contact-form {
@@ -112,18 +143,17 @@ label {
 
 label, input, textarea {
   display: block;
-  width: 100%;
   margin-bottom: 12px;
 }
 
 input {
-  width: 450%;
   height: 32px;
+  width: 80%;
 }
 
 textarea {
-  width: 450%;
   height: 160px;
+  width: 80%;
 }
 
 button {
@@ -157,17 +187,91 @@ footer {
   header {
     display: block;
     text-align: center;
+    padding: 0;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  .container {
+    justify-content: center;
+    gap: 24px;
+    padding-bottom: 10px;
+  }
+
+  p {
+    font-size: 12px;
+  }
+
+  header img {
+    width: 18px;
+    height: 18px;
   }
 
   .about {
-    width: auto;
+    width: 100%;
+    padding: 20px;
+    margin-top: 56px;
+  }
+
+  .about h2 {
+    margin-bottom: 30px;
+  }
+
+  .images {
+    flex-direction: column;
+    width: 90%;
+  }
+
+  .works img {
+    width: 100%;
+    height: 100%;
+    display: block;
   }
 
   td {
     display: block;
+    border: none;
+  }
+
+  tr {
+    border-top: 1px solid gainsboro;
+    border-bottom: 1px solid gainsboro;
+  }
+
+  .date {
+    padding:  15px 15px 0 15px;
+  }
+
+  .note {
+    padding: 0 15px 15px 15px;
+  }
+
+  table {
+    width: 90%;
   }
   
   .contacts {
     display: block;
+    width: 100%;
+  }
+
+    .contact-form {
+    width: 100%;
+  }
+
+  input, textarea {
+    width: 92%;
+    display: flex;
+    margin: auto;
+  }
+
+  label {
+    margin: 13px 0 0 20px;
+  }
+
+  footer {
+    margin-top: 60px;
   }
 }
